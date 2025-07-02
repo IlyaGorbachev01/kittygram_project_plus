@@ -1,0 +1,27 @@
+GET http://127.0.0.1:8000/owners/
+
+###
+
+GET http://127.0.0.1:8000/cats/
+
+###
+
+POST http://127.0.0.1:8000/owners/
+Content-Type: application/json
+
+{
+    "first_name": "James",
+    "last_name": "Bond"
+} 
+
+###
+
+POST http://127.0.0.1:8000/cats/
+Content-Type: application/json
+
+{
+    "name": "Lex",
+    "color": "Black",
+    "birth_year": 2020,
+    "owner": 1
+} 
