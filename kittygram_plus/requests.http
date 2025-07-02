@@ -23,5 +23,9 @@ Content-Type: application/json
     "name": "Lex",
     "color": "Black",
     "birth_year": 2020,
-    "owner": 1
+    "owner": 1,
+    "achievements": [
+        {"name": "Поймал мышку"},
+        {"name": "Разбил вазу"}
+    ]
 } 

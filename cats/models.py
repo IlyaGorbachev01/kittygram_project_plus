@@ -23,6 +23,9 @@ class Cat(models.Model):
     owner = models.ForeignKey(
         Owner, related_name='cats', on_delete=models.CASCADE
     )
+    achievements = models.ManyToManyField(
+        Achievement, through='AchievementCat'
+    )
 
     def __str__(self):
         return self.name
