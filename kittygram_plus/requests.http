@@ -20,8 +20,8 @@ POST http://127.0.0.1:8000/cats/
 Content-Type: application/json
 
 {
-    "name": "Lex",
-    "color": "Black",
+    "name": "Vasya",
+    "color": "#228B22",
     "birth_year": 2020,
     "owner": 1,
     "achievements": [
@@ -29,3 +29,22 @@ Content-Type: application/json
         {"name": "Разбил вазу"}
     ]
 } 
+
+###
+
+GET http://127.0.0.1:8000/cats/recent-white-cats/
+
+###
+
+POST http://127.0.0.1:8000/auth/users/
+Content-Type: application/json
+
+{
+    "username": "asdf",
+    "password": "Asdf!234"
+}
+
+###
+
+GET http://127.0.0.1:8000/cats/
+Authorization: Token 377da47b1b1528ddf7cdc8914c425d52bb952f6c
